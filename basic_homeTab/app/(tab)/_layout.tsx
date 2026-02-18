@@ -1,35 +1,34 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { Home, Search, Bell, View, User, Settings } from "lucide-react-native";
+import {
+  Home,
+  Settings,
+  Table,
+  ClipboardList,
+  User,
+} from "lucide-react-native";
 
 const _layout = () => {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarShowLabel: false,
+        tabBarShowLabel: true,
+        tabBarActiveTintColor: "#007aff",
+        tabBarInactiveTintColor: "#9CA3AF",
         tabBarStyle: {
-          backgroundColor: "#0f0D23",
-          borderRadius: 50,
-          marginHorizontal: 20,
-          marginBottom: 20,
-          height: 52,
-          position: "absolute",
-          overflow: "hidden",
+          height: 60,
+          paddingBottom: 8,
+          paddingTop: 6,
         },
       }}
     >
       <Tabs.Screen
         name="first"
         options={{
-          tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                marginTop: 10,
-              }}
-            >
-              <User size={25} color={focused ? "#fff" : "#A8B5DB"} />
-            </View>
+          title: "Tables",
+           tabBarIcon: ({ color, size, focused }) => (
+            <Table size={focused ? size + 3 : size} color={color} />
           ),
         }}
       />
@@ -37,14 +36,9 @@ const _layout = () => {
       <Tabs.Screen
         name="second"
         options={{
-          tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                marginTop: 12,
-              }}
-            >
-              <Search size={24} color={focused ? "#fff" : "#A8B5DB"} />
-            </View>
+          title: "Orders",
+          tabBarIcon: ({ color, size, focused }) => (
+            <ClipboardList size={focused ? size + 3 : size} color={color} />
           ),
         }}
       />
@@ -52,14 +46,9 @@ const _layout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                marginTop: 10,
-              }}
-            >
-              <Home size={26} color={focused ? "#fff" : "#A8B5DB"} />
-            </View>
+          title: "Home",
+          tabBarIcon: ({ color, size, focused }) => (
+            <Home size={focused ? size + 3 : size} color={color} />
           ),
         }}
       />
@@ -67,14 +56,9 @@ const _layout = () => {
       <Tabs.Screen
         name="third"
         options={{
-          tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                marginTop: 14,
-              }}
-            >
-              <Bell size={24} color={focused ? "#fff" : "#A8B5DB"} />
-            </View>
+          title: "User",
+          tabBarIcon: ({ color, size, focused }) => (
+            <User size={focused ? size + 3 : size} color={color} />
           ),
         }}
       />
@@ -82,14 +66,9 @@ const _layout = () => {
       <Tabs.Screen
         name="fourth"
         options={{
-          tabBarIcon: ({ focused }) => (
-            <View
-              style={{
-                marginTop: 14,
-              }}
-            >
-              <Settings size={24} color={focused ? "#fff" : "#A8B5DB"} />
-            </View>
+          title: "Settings",
+          tabBarIcon: ({ color, size, focused }) => (
+            <Settings size={focused ? size + 3 : size} color={color} />
           ),
         }}
       />
