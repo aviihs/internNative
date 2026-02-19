@@ -1,50 +1,60 @@
-# Welcome to your Expo app 👋
+# 📱 Basics_UI
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> Android application build successfully completed.  
+> Download the APK using the QR code or direct link below.
 
-## Get started
+---
 
-1. Install dependencies
+## 📦 APK Build Status
 
-   ```bash
-   npm install
-   ```
+✅ Release APK Generated  
+✅ Tested on Android Device  
+✅ Ready for Installation
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ⬇️ Download APK
 
-In the output, you'll find options to open the app in a
+### 🔗 Direct Download Link
+👉 https://expo.dev/accounts/av_ihs/projects/basic_homeTab/builds/fd290b83-14ae-4b37-bd0c-e580cb5f3833
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 📲 Scan QR Code to Download
 
-## Get a fresh project
+<p align="center">
+  <img src="./assets/images/Screenshot 2026-02-19 at 12.22.04.png" width="220" />
+</p>
 
-When you're ready, run:
+> Scan the QR code using your mobile device to download the APK directly.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠️ Build Info
 
-## Learn more
+- Platform: Android  
+- Build Type: Release  
+- APK Format: `.apk`  
+- Installation: Allow **Install from Unknown Sources**
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## ⚠️ Note
 
-## Join the community
+If installation is blocked:
+1. Go to **Settings**
+2. Enable **Install unknown apps**
+3. Retry APK installation
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 👨‍💻 Developer
+
+**Shiva Bhusal**  
+📍 Nepal
+
+---
+
+## ⭐ Support
+
+If you find this app useful, feel free to share it 😊
