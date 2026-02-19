@@ -8,10 +8,9 @@ interface TableCardProps {
 }
 
 const TableCard = ({ table }: TableCardProps) => {
-  
-
   const getStatusColor = (status: string) => {
-    return STATUS_STYLES[status] ?? "bg-gray-400";
+    // return STATUS_STYLES[status] ?? "bg-gray-300";
+    return STATUS_STYLES[status] ?? "#d1d5db";
   };
 
   return (
@@ -22,12 +21,14 @@ const TableCard = ({ table }: TableCardProps) => {
       <View className="flex-row justify-between items-center mb-2">
         <Text className="text-lg font-bold text-slate-900">{table.name}</Text>
 
-        <View
-          className={`px-3 py-1 rounded-full ${getStatusColor(
-            table.status
-          )} shadow-sm`}
-        >
-          <Text className="text-white text-xs font-semibold capitalize">
+        {/* <View
+          className={`px-3 py-1 rounded-full shadow-sm ${getStatusColor(table.status)}`}
+        >*/}<View 
+  className="px-3 py-1 rounded-full shadow-sm"
+  style={{ backgroundColor: getStatusColor(table.status)}}
+>
+
+          <Text className="text-gray-800 text-xs font-semibold capitalize">
             {table.status}
           </Text>
         </View>
