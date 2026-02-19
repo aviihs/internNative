@@ -6,7 +6,7 @@ import { Table } from "../../interface/interfaces";
 
 const FirstTab = () => {
   const tables: Table[] = [
-    { id: 1, name: "Table 1", seats: 4, status: "available" },
+    { id: 1, name: "Table 1", seats: 4, status: "reserved" },
     { id: 2, name: "Table 2", seats: 2, status: "occupied" },
     { id: 3, name: "Table 3", seats: 6, status: "reserved" },
     { id: 4, name: "Table 4", seats: 4, status: "available" },

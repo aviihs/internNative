@@ -31,7 +31,7 @@ export default function Index() {
               Notifications
             </Text>
             <Text className="text-slate-700">
-              You have 3 new messages and 5 tasks pending.
+              You have 3 new messages and 5 orders pending.
             </Text>
           </View>
         </View>

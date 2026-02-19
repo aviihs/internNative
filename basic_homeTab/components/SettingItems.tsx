@@ -18,3 +18,4 @@ const SettingsItem = ({ title, onPress }: SettingsItemProps) => {
 };
 
 export default SettingsItem;
+
