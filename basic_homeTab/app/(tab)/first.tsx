@@ -1,7 +1,7 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView, View, Text } from "react-native";
 import React from "react";
-import TableCard from "@/components/TableCard";
+import TableCard from "../../components/TableCard";
 import { Table } from "../../interface/interfaces";
 
 const FirstTab = () => {

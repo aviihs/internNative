@@ -19,7 +19,7 @@ export default function Index() {
         <View className="space-y-4">
           <View className="bg-white p-5 rounded-2xl shadow-md">
             <Text className="text-xl font-semibold text-slate-950 mb-2">
-              Daily Summary
+              Delivery Summary
             </Text>
             <Text className="text-slate-700">
               Lorem ipsum dolor sit amet.
@@ -38,7 +38,7 @@ export default function Index() {
 
 
         <Pressable
-          className="bg-[#0f0D23] mt-4 py-4 rounded-2xl shadow-lg active:opacity-80"
+          className="bg-[#007aff] mt-4 py-4 rounded-2xl shadow-lg active:opacity-80"
           onPress={() => alert("Button Pressed")}
         >
           <Text className="text-white text-center font-semibold text-base">

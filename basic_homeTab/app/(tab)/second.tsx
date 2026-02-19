@@ -1,41 +1,30 @@
-import { View, Text, Pressable, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView, Text, View } from "react-native";
+import { Order } from "../../interface/interfaces";
+import OrderCard from "@/components/OrderCard";
 
-const second = () => {
+const Orders = () => {
+  const orders: Order[] = [
+    { id: 1, item: "Pizza ", quantity: 2, price: 15.99, status: "pending" },
+    { id: 2, item: "Pasta ", quantity: 1, price: 12.5, status: "completed" },
+    { id: 3, item: "Coke", quantity: 3, price: 3.0, status: "completed" },
+    { id: 4, item: "Burger", quantity: 2, price: 10.0, status: "cancelled" },
+  ];
+
   return (
     <SafeAreaView className="flex-1 bg-slate-100">
       <ScrollView contentContainerStyle={{ padding: 20 }}>
-        <View className="mb-8">
-          <Text className="text-3xl font-bold text-slate-900">Second Tab</Text>
-          <Text className="text-slate-600 mt-1">
-            This is the Second tab. Explore the content and enjoy!
-          </Text>
-        </View>
+        <Text className="text-3xl font-bold text-slate-900 mb-6">My Orders</Text>
 
-        <View className="bg-white p-5 rounded-2xl shadow-md">
-          <Text className="text-xl font-semibold text-slate-950 mb-2">
-            SecondTab Content:
-          </Text>
-          <Text className="text-slate-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            velit quo eum. Suscipit veritatis dolore facere odit minima sequi
-            sunt, eius ea, molestiae officia placeat ipsam nostrum omnis fuga
-            eligendi.
-          </Text>
+        <View className="flex-col">
+          {orders.map((order) => (
+            <OrderCard key={order.id} order={order} />
+          ))}
         </View>
-
-        <Pressable
-          className="bg-[#0f0D23] mt-4 py-4 rounded-2xl shadow-lg active:opacity-80"
-          onPress={() => alert("Button Pressed")}
-        >
-          <Text className="text-white text-center font-semibold text-base">
-            Click Second Tab
-          </Text>
-        </Pressable>
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default second;
+export default Orders;
